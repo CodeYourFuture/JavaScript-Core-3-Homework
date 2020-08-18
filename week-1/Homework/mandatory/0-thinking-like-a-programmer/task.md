@@ -28,10 +28,18 @@ After you've watched these videos I'd like you to answer these questions
 
 <!-- Write your answer here -->
 
+Effective way of problem solving skill is the most important quality of a programmer.
+
 ## 2. When trying to solve a challenge, what should you do first?
 
 <!-- Write your answer here -->
 
+try to understand what exactly the problem is. try to draw a diagram or try to explain the problem to someone else or talk to rubber duck as if considering it is someone else to better understand hat the problem is.
+
 ## 3. What should you do if you get stuck?
 
 <!-- Write your answer here -->
+
+If you’re stuck, you should reduce the problem to something simpler.
+-Debug: Go step by step through your solution trying to find where you went wrong. Programmers call this debugging (in fact, this is all a debugger does).
+-Reassess: Take a step back. Look at the problem from another perspective. Is there anything that can be abstracted to a more general approach?
