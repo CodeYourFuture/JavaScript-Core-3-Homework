@@ -3,7 +3,6 @@
 _Need some help? Refresh your memory with [this article](https://www.freecodecamp.org/news/array-destructuring-in-es6-30e398f21d10/)_
 
 - In `exercise-3.js`, you have been provided with a takeout order. Write a program that will print out the receipt for this order.
-- Use array destructuring to extract the values you need from the order
 - Log each individual item to the console.
 - Log the total cost of the order to the console.
 
