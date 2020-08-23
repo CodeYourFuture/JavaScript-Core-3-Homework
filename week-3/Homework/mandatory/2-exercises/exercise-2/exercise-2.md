@@ -13,7 +13,7 @@ For each character you have the following information:
 
 ## Task 1
 
-- In `exercise-2.js` write a program that will display the names of the people who belong to the Gryffindor house.
+- In `exercise-2.js` write a program that will take the `hogwarts` array as input and display the names of the people who belong to the Gryffindor house.
 - Use array destructuring to extract the values you need out of the array.
 
 ### Expected result
@@ -28,7 +28,7 @@ Albus Dumbledore
 
 ## Task 2
 
-- In `exercise-2.js` write a program that will display the names of teachers who have pets.
+- In `exercise-2.js` write a program that will take the `hogwarts` array as input and display the names of teachers who have pets.
 - Use array destructuring to extract the values you need out of the array.
 
 ### Expected result

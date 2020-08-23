@@ -1,11 +1,9 @@
  let order = [
-     ['Hot cakes', 1, 2.29],
-     ['Apple Pie', 2, 1.39],
-     ['Egg McMuffin', 1, 2.80],
-     ['Sausage McMuffin', 1, 3.00],
-     ['Hot Coffee', 2, 1.00],
-     ['Hash Brown', 4, 0.40]
+     { itemName: "Hot cakes", quantity: 1, unitPrice: 2.29},
+     { itemName: "Apple Pie", quantity: 2, unitPrice: 1.39},
+     { itemName: "Egg McMuffin", quantity: 1, unitPrice: 2.80},
+     { itemName: "Sausage McMuffin", quantity: 1, unitPrice: 3.00},
+     { itemName: "Hot Coffee", quantity: 2, unitPrice: 1.00},
+     { itemName: "Hash Brown", quantity: 4, unitPrice: 0.40}
  ]
-
- // Write your code below
  
