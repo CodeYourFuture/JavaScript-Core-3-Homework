@@ -6,6 +6,8 @@ Using ESLint can make debugging a lot easier. If you haven't already you should 
 
 https://marketplace.visualstudio.com/items?itemName=dbaeumer.vscode-eslint
 
+installed already.
+
 ## 2. Thinking like a Programmer
 
 During these past weeks you have gotten a taste of what programming is: the various concepts, what it looks like in code and the way it's used. However, having written some code doesn't make you a programmer. Thinking like a programmer makes you into a programmer. But what does that mean, 'thinking like a programmer'?
@@ -19,19 +21,24 @@ The second skill, problem solving, is the most important one. If you get good at
 Take a look at the following resources to learn more about problem solving as applied to programming:
 
 - [How to THINK like a programmer](https://www.youtube.com/watch?v=NNazO2tMHno)
+ watched this video.
 - [Lessons in problem solving](https://www.freecodecamp.org/news/how-to-think-like-a-programmer-lessons-in-problem-solving-d1d8bf1de7d2/)
+ read the article.
 - [Computational thinking](https://www.youtube.com/watch?v=qbnTZCj0ugI)
-
+ watched this video.
 After you've watched these videos I'd like you to answer these questions
 
 ## 1. What do you think the most important quality for a programmer is?
 
 <!-- Write your answer here -->
+ I think the most important quality for a programmer is to be a good problem solver. He should know how to solve the problems computationally and also should know how to solve big problems by dividing into small sub problems and  how to solve the problems algorithmatically.He also  know the techniques of problem solving.
 
 ## 2. When trying to solve a challenge, what should you do first?
 
 <!-- Write your answer here -->
+ First ask questions to understand the problem, then look down on a problem step by step, divide the problem into small sub problems , think logically and try to solve the problem.
 
 ## 3. What should you do if you get stuck?
 
 <!-- Write your answer here -->
+ if you get stuck then ask for help, and the easiest thing to do is talk to colleague, try talking to a rubber duck, try debugging out loud , redefine the problem from start and try to solve the problem from start.
