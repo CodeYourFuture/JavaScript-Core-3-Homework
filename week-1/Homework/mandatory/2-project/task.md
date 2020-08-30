@@ -8,6 +8,11 @@ All of the details for this project can be found [here](https://syllabus.codeyou
 
 You should complete up to and including Level 300
 
+completed till level 300.
+
+https://cyf-alihaider-1-cyf.netlify.app/
+https://github.com/AliHaider-1/tv-show-dom-project
+
 ## Project Setup
 
 It is very important that you make sure you project is setup correctly.
