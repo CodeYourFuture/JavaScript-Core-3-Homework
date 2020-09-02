@@ -1,6 +1,6 @@
 # Project - Part 1
-
-In this weeks project we will be using the knowledge we learnt from JS1 & JS2 to build the first version of our website
+r
+In this weeks project we will be using the knowledge we learnt fom JS1 & JS2 to build the first version of our website
 
 ## Project Details
 
