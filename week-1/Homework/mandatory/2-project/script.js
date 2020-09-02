@@ -1,6 +1,7 @@
 let show=getAllShows();
 let load=false;
 let List=[];
+
 const rootElem = document.getElementById("root-grid");
 const container=document.getElementById("container");
 const searchCont=document.getElementById("search");
@@ -8,16 +9,20 @@ let txtSelect=document.createElement("select");
 let txtShow=document.createElement("select");
 let txtSearch=document.createElement("input");
 let match=document.createElement("spam");
-let btnBack=document.createElement("button");
+let btnEpisodeBack=document.createElement("button");
 txtSearch.setAttribute("type","text");
+btnHome.id="btnHome";
+btnHome.setAttribute("style","width:5rem;height:2rem;font-weight:bold")
 txtSearch.classList.add("txtSearch");
 txtSelect.classList.add("txtSelect");
 txtShow.classList.add("txtShow");
 match.classList.add("displayNo");
+
 searchCont.appendChild(txtShow);
 searchCont.appendChild(txtSelect);
 searchCont.appendChild(txtSearch);
 searchCont.appendChild(match);
+searchCont.appendChild(btnHome);
 
 //*****************************display one and two entries on screen */
 function displayOne(width,height,length){
@@ -95,6 +100,9 @@ function display(name,img,summary,season,number,load){
   image.classList.add("episode-img");
   description.classList.add("episode-description");
   heading.textContent=name;
+  heading.addEventListener("click",function(){
+    episodeHeadingClick(name);
+  })
   image.src=img;
   description.innerHTML=summary;
   let sNo=season;
@@ -117,7 +125,7 @@ txtSearch.addEventListener("keyup",function(){
   //empty rooElem and put new entries according to search term
   if(txtSearch.value===""){
     rootElem.innerHTML="";
-    btnBack.remove();
+    btnEpisodeBack.remove();
      for(i=0;i<List.length;i++){  //create html elements;
       if(List[i].name!=null && List[i].summary!=null&& List[i].image!=null && List[i].number!=null && List[i].season!=null){
         display(List[i].name,List[i].image.medium,List[i].summary,
@@ -126,23 +134,23 @@ txtSearch.addEventListener("keyup",function(){
       }  
      match.textContent="Displaying "+List.length+"/"+List.length+" Episodes";
   }else{
-    btnBack.remove();
+    btnEpisodeBack.remove();
      search(txtSearch);
   }
 });
 //********************back to all episode main page*/
-btnBack.addEventListener("click",function(){
+btnEpisodeBack.addEventListener("click",function(){
   //empty rootElem div and load again
   rootElem.innerHTML="";
   searchCont.setAttribute("style","width:100%")
   makePageForEpisodes(List);
-  btnBack.remove();//no need this button now
-  searchCont.appendChild(txtSearch);
-  searchCont.appendChild(match);
+  btnEpisodeBack.remove();//no need this button now
+  // searchCont.appendChild(txtSearch);
+  // searchCont.appendChild(match);
 });
 //******************this event triggers when choose a show name */
 txtShow.addEventListener("change",function(e){
-  btnBack.remove();
+  btnEpisodeBack.remove();
   //empty txtSelect for new episodes and rootElm div for new entries
   txtSelect.innerHTML="";
   rootElem.innerHTML="";
@@ -169,11 +177,12 @@ txtShow.addEventListener("change",function(e){
         }
        });
 });
-//*******************this event trigger when choose a episodes */
-txtSelect.addEventListener("change",function(e){
+////*******************this event trigger when choose a episodes title*/
+function episodeHeadingClick(episodeLink){
     //selected value in txr select input
-    let epName=txtSelect.value.slice(7);
+    let epName=episodeLink;
     let cnt=1;//count of episode
+    console.log(epName);
     //check whether the selected episode exist in array List or not
    //if exist call display() and adjust html element for that episode
     for(let obj of List){
@@ -186,9 +195,35 @@ txtSelect.addEventListener("change",function(e){
           obj.season,obj.number);
         }
         match.textContent="Displaying:"+cnt+"/"+List.length+" Episodes";
-        btnBack.textContent="<<";
-        btnBack.setAttribute("style","width:5rem;height:3rem;font-weight:bold")
-        searchCont.appendChild(btnBack);
+        btnEpisodeBack.textContent="<<";
+        btnEpisodeBack.setAttribute("style","width:5rem;height:2rem;font-weight:bold;margin-left:0.5rem;")
+        searchCont.appendChild(btnEpisodeBack);
+        displayOne(32,20,1);
+      }
+      cnt++;
+    }
+ }
+//*******************this event trigger when choose a episodes */
+txtSelect.addEventListener("change",function(e){
+    //selected value in txr select input
+    let epName=txtSelect.value.slice(7);
+    let cnt=1;//count of episode
+    console.log(epName);
+    //check whether the selected episode exist in array List or not
+   //if exist call display() and adjust html element for that episode
+    for(let obj of List){
+      if(obj.name===epName){
+       txtSearch.value="";
+        searchCont.setAttribute("style","width:100%")
+        rootElem.innerHTML="";
+        if(obj.name!=null && obj.summary!=null && obj.image!=null && obj.number!=null && obj.season!=null){
+          display(obj.name,obj.image.medium,obj.summary,
+          obj.season,obj.number);
+        }
+        match.textContent="Displaying:"+cnt+"/"+List.length+" Episodes";
+        btnEpisodeBack.textContent="<<";
+        btnEpisodeBack.setAttribute("style","width:5rem;height:2rem;font-weight:bold;margin-left:0.5rem;")
+        searchCont.appendChild(btnEpisodeBack);
         displayOne(32,20,1);
       }
       cnt++;
@@ -196,6 +231,7 @@ txtSelect.addEventListener("change",function(e){
  });
 //put the episodes entries in div rooElem at the loading time
 function makePageForEpisodes(episodeList) {
+ 
   load=true;//restrict load txtSelect input one time
   match.textContent="Displaying "+episodeList.length+"/"+episodeList.length+" Episodes";
   //calling display() to put entries on rootElem and load txtSelect
@@ -203,23 +239,28 @@ function makePageForEpisodes(episodeList) {
     if(episodeList[i].name!=null && episodeList[i].summary!=null && episodeList[i].image!=null && episodeList[i].number!=null && episodeList[i].season!=null){
       display(episodeList[i].name,episodeList[i].image.medium,episodeList[i].summary,
       episodeList[i].season,episodeList[i].number,load);
+      console.log(episodeList.length);
     }
   }
 }
 //*******************8loading time function
-function setup() {
+function setup(id) {
   //sort the given array of object "show"
   show.sort((a, b) => (a.name > b.name) ? 1 : -1)
- //remove the first object as it do not contain proper data
-  show.shift();
-  //add the array of objects in select input txtShow
+  let option=document.createElement("option");
+  txtShow.add(option);
+  option.text=option.value="All Shows"
   for(let obj of show){
-    let option=document.createElement("option");
+    option=document.createElement("option");
     option.text=option.value=obj.name;
     txtShow.add(option);
   }
+ 
   //take the first object of array episodes list url
-   let  url=`https://api.tvmaze.com/shows/${show[0].id}/episodes`;
+  
+  
+   let  url=`https://api.tvmaze.com/shows/${id}/episodes`;
+
     fetch(url).then(function response(res){
       return res.json();
     })
@@ -229,6 +270,8 @@ function setup() {
         makePageForEpisodes(List);
      });
 }
-
+  
 //*************load event */
-window.onload = setup;
+// window.onload = setup;
+window.onload = showList(show);
+

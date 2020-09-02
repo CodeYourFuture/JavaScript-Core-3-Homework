@@ -10677,7 +10677,7 @@ function getAllShows() {
     {
       "id": 167,
       "url": "http://www.tvmaze.com/shows/167/24",
-      "name": "24",
+      "name": "Show24",
       "type": "Scripted",
       "language": "English",
       "genres": [

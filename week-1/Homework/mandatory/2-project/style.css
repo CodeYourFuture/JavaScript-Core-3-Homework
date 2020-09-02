@@ -6,6 +6,7 @@ body{
   width:100vw;
   height: 100vh;
 }
+
 #container{
   font:10px;
   width:80%;
@@ -14,8 +15,8 @@ body{
   margin-right: auto;
   padding: 0.2rem;
   background-color:rgb(211,211,211);
-  
 }
+
 #root-grid {
   width:100%;
   height:auto;
@@ -48,6 +49,10 @@ body{
   justify-content: center;
   align-items: center;
 }
+.episode-title:hover{
+  border-color: blue;
+  cursor: pointer;
+}
 .episode-img{
   width:80%;
   height:6rem;
@@ -61,31 +66,34 @@ body{
   color:gray;
 }
 #search{
+  text-align: center;
   width: 100%;
   height:auto;
-  padding-top: 0.2rem;
   color:rgb(59, 56, 56);
-  display: flex;
-  justify-content: space-evenly;
-  align-items: center;
 }
 .txtSearch{
   color:black;
-  height:1.5rem;
+  height:2rem;
   width:7rem;
+  margin-left: 0.5rem;
 }
 .txtSelect{
   color:black;
   height:2rem;
-  width:15rem;
+  width:10rem;
   background-color: rgb(211,211,211);
+  margin-left: 0.5rem;
 }
 .txtShow{
   color:black;
   height:2rem;
-  width:14rem;
+  width:10rem;
   background-color: rgb(211,211,211);
+  margin-left: 0.5rem;
 }
 .displayNo{
   font-size:0.8rem;
+}
+#btnHome{
+  margin-left: 0.5rem;
 }
