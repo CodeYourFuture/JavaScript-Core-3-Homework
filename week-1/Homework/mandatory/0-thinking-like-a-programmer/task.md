@@ -28,10 +28,15 @@ After you've watched these videos I'd like you to answer these questions
 
 <!-- Write your answer here -->
 
+Don`t shy and ask every problem to your team and never give up , determination
+
 ## 2. When trying to solve a challenge, what should you do first?
 
 <!-- Write your answer here -->
 
+Struggling to understand what is the problem , what does the problem want from me 
+
 ## 3. What should you do if you get stuck?
 
 <!-- Write your answer here -->
+Asking Google, stack overflow , youtube , ask friends . 
