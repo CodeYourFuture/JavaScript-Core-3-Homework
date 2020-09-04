@@ -27,7 +27,7 @@ After you've watched these videos I'd like you to answer these questions
 ## 1. What do you think the most important quality for a programmer is?
 
 <!-- 
-Abstraction. Abstraction gives the programmer a great advantage of deducing solutions to new problems from previous solutions that the programmer is used to. Because it is very hard to just brute force your way and memorize different solutions to different problems you have to sharp your Abstraction skills. 
+Abstraction and Problem-solving skills. Abstraction gives the programmer a great advantage of deducing solutions to new problems from previous solutions that the programmer is used to. Because it is very hard to just brute force your way and memorize different solutions to different problems you have to sharp your Abstraction skills. 
 -->
 
 ## 2. When trying to solve a challenge, what should you do first?
