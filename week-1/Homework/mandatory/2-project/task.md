@@ -8,6 +8,9 @@ All of the details for this project can be found [here](https://syllabus.codeyou
 
 You should complete up to and including Level 300
 
+https://github.com/carterd888/tv-show-dom-project
+https://cyf-carterd888-tv.netlify.app/
+
 ## Project Setup
 
 It is very important that you make sure you project is setup correctly.
