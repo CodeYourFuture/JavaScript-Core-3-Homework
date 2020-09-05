@@ -2,11 +2,11 @@
 
 My website should be able to:
 
-- View a list of books that I've read
-- Add books to a list of books that I've read
-  - Including title, author, number of pages and if I've read it
-  - If any of the information is missing it shouldn't add the book and should show an alert
-- Remove books from my list
+-   View a list of books that I've read
+-   Add books to a list of books that I've read
+    -   Including title, author, number of pages and if I've read it
+    -   If any of the information is missing it shouldn't add the book and should show an alert
+-   Remove books from my list
 
 ## Bugs to be fixed
 
