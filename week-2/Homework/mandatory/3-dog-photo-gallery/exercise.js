@@ -1,7 +1,4 @@
 
-var source;
-
-//api fetch
 let getButton = document.querySelector("button");
 getButton.addEventListener("click", function () {
 fetch("https://dog.ceo/api/breeds/image/random")
