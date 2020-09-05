@@ -26,12 +26,15 @@ After you've watched these videos I'd like you to answer these questions
 
 ## 1. What do you think the most important quality for a programmer is?
 
-<!-- Write your answer here -->
+Ability to solve problems.
 
 ## 2. When trying to solve a challenge, what should you do first?
 
-<!-- Write your answer here -->
+To understand what the problem is: what are the expected results, how it might work, and how to decompose it into several smaller tasks
 
 ## 3. What should you do if you get stuck?
 
-<!-- Write your answer here -->
+ - analyze the problem in order to understand it better
+ - see if you can decompose it into a number of smaller tasks
+ - occasionally, it is best to comment out what you did and start anew
+ - look up on the internet to see if someone had a similar ptoblem before
