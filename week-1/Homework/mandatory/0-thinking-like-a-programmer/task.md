@@ -31,10 +31,19 @@ After you've watched these videos I'd like you to answer these questions
 
 <!-- Write your answer here -->
 
+To be a problem solver. To be able to think about a problem and come up with a solution.
+
 ## 2. When trying to solve a challenge, what should you do first?
 
 <!-- Write your answer here -->
 
+1. Try and understand your problem.
+2. Try and visualise it and maybe do the rubber duckie thing.
+
 ## 3. What should you do if you get stuck?
 
 <!-- Write your answer here -->
+
+You stop and take a break and the regroup.
+Talk to a rubber duckie
+Research google
