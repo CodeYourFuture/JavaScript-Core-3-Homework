@@ -57,6 +57,7 @@ function render() {
   for (let n = rowsNumber - 1; n > 0; n--) {
     table.deleteRow(n);
   }
+
   //insert updated row and cells
   let length = myLibrary.length;
   for (let i = 0; i < length; i++) {
@@ -84,7 +85,7 @@ function render() {
     changeBut.innerHTML = readStatus;
 
     changeBut.addEventListener("click", function () {
-      myLibrary[i].check ===!myLibrary[i].check;
+      myLibrary[i].check === !myLibrary[i].check;
       render();
     });
 
