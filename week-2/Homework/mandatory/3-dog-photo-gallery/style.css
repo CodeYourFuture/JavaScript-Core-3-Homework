@@ -1,0 +1,47 @@
+body{
+    background-color: #3A84C5;
+}
+.container{
+    background-color:  #619CD1;
+    width: 60%;
+    margin: auto;
+    border-radius: 10px;
+}
+h1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 30px;
+}
+.pic{
+   
+    width: 40%;
+    height: 400px;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+li{
+    list-style: none;
+}
+
+.buttons{
+    text-align: center;   
+}
+#buttonOne, #buttonTwo{
+    background-color: chocolate;
+    border-radius: 5px;
+    width: 100px;
+    
+}
+#buttonOne:hover, #buttonTwo:hover{
+    color: white;
+}
+img{
+    border-radius: 10px;
+    width: 400px;
+    height: 350px;
+}
