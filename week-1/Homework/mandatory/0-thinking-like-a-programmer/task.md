@@ -34,7 +34,7 @@ Effective way of problem solving skill is the most important quality of a progra
 
 <!-- Write your answer here -->
 
-try to understand what exactly the problem is. try to draw a diagram or try to explain the problem to someone else or talk to rubber duck as if considering it is someone else to better understand hat the problem is.
+try to understand what exactly the problem is. try to draw a diagram or try to explain the problem to someone else or talk to rubber duck as if considering it is someone else to better understand what the problem is.
 
 ## 3. What should you do if you get stuck?
 
