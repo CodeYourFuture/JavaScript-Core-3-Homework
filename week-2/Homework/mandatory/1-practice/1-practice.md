@@ -25,6 +25,9 @@ The following endpoint is publicly available from Github
 1. What would you put in the following fields? `{owner}`, `{repo}`, `{pull_number}`?
 
 <!-- Write your answer here -->
+In the owner section we will put the github name of the person we want to search for.
+In the repo section we will put the name of the repository we are looking for.
+In the pull_number section we will add the pull request number. 
 
 2. Describe in a sentence what this API endpoint returns when all of the fields are completed?
 
