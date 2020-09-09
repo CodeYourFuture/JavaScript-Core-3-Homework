@@ -1,0 +1,39 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+</head>
+<body>
+    <div class="card mx-auto" style="width: 18rem;">
+        <img src="" class="card-img-top" alt="..." style="display: none;">
+        <div class="card-body">
+          <h5 class="card-title">Cute Dogs</h5>
+          <p class="card-text">A recent study has discovered that it's no accident that we are drawn to canines and find them terribly cute</p>
+         <button class="btn btn-primary" id="dogBtn " onclick="getDogPhoto()">Get New Photos</button>
+        </div>
+      </div>
+
+      <script>
+    
+
+   // let changePhoto = document.getElementById("dogBtn");
+
+   // changePhoto.addEventListener('click', getDogPhoto);
+     
+    function getDogPhoto(){
+        let dogImage = document.querySelector(".card-img-top") ;
+
+        fetch("https://dog.ceo/api/breeds/image/random")
+          .then(response => response.json())
+         .then(function(newDog) {
+      
+       dogImage.src = newDog.message;
+       dogImage.style.display = "block"
+    })
+    .catch(error => console.log(error));
+    }
+      </script>
+</body>
+</html>
