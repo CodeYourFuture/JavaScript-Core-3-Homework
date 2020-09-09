@@ -4,7 +4,10 @@ const URL = 'https://dog.ceo/api/breeds/image/random';
 
 btn.addEventListener('click',function(){
     //when the button is clicked getData() function is triggered
-    getData()
+    getData().catch(error =>{
+        console.error(error);
+
+    });
 });
 
 async function getData() {
