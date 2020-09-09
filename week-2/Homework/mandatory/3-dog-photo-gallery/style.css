@@ -1,0 +1,40 @@
+body
+{
+  font:1rem/1.56 "ubuntu",Verdana,Arial,sans-serif;
+  background-color: #275010; 
+}
+
+.heading
+{
+    color:rgb(241, 172, 159);
+    text-align: center;
+    font-size: 3.5em;
+}
+
+.btn
+{
+  width:30%;
+  margin:auto;
+  font-size: 2em;
+  border:3px solid;
+  border-color: rgb(241, 172, 159);
+}
+
+.image-container-ul
+{
+  /* width:100%; */
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  text-decoration:none;
+  list-style-type: none;
+}
+
+.image
+{
+  margin: 1em;
+  width:15em;
+  height: auto;
+  border:3px solid;
+  border-color: rgb(241, 172, 159);
+}
