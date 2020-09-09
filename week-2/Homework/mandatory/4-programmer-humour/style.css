@@ -1,0 +1,32 @@
+body {
+    background: rgb(97, 97, 97);
+    margin: 0;
+    padding: 0;
+    font-family: 'Courier New', Courier, monospace;
+    box-sizing: border-box;
+}
+
+h1 {
+  text-align: center;
+  color: rgb(146, 127, 16);
+  background: black;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
+
+.number-container {
+    display: flex;
+    justify-content: space-evenly;
+    font-weight: 700;
+}
+
+.img-text-container {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    font-weight: 700;
+}
+
+.text-container {
+    margin-left: -40rem;
+}
