@@ -25,7 +25,11 @@ The following endpoint is publicly available from Github
 1. What would you put in the following fields? `{owner}`, `{repo}`, `{pull_number}`?
 
 <!-- Write your answer here -->
+user,repository_url,keys_ur
+
+I inspected github API . 
 
 2. Describe in a sentence what this API endpoint returns when all of the fields are completed?
 
 <!-- Write your answer here -->
+It can be JSON or text(). 
