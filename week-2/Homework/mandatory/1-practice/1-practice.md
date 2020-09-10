@@ -24,8 +24,8 @@ The following endpoint is publicly available from Github
 
 1. What would you put in the following fields? `{owner}`, `{repo}`, `{pull_number}`?
 
-<!-- Write your answer here -->
+the owner is the github username of the user in string format, the repro is the name of the repository in string format and the pull number is the pull request as an integer.
 
 2. Describe in a sentence what this API endpoint returns when all of the fields are completed?
 
-<!-- Write your answer here -->
+as much information as possible on a pull request including comments, reviews and issues.
