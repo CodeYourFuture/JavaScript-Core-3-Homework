@@ -10,9 +10,9 @@ getImgButton.addEventListener("click", (event) => {
         .then(function (response) {
             return response.json();
         })
-        .then(function (greeting) {
-            console.log(greeting);
-            imgElem.src = greeting.message;
+        .then(function (dog) {
+            console.log(dog);
+            imgElem.src = dog.message;
         })
         .catch(function (error) {
             console.error('Error:', error);
