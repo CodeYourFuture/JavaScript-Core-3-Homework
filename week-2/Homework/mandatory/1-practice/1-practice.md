@@ -26,6 +26,12 @@ The following endpoint is publicly available from Github
 
 <!-- Write your answer here -->
 
+{owner} is the github username
+{repo} is the name of the repository
+{pull_number} is the pull request number
+
 2. Describe in a sentence what this API endpoint returns when all of the fields are completed?
 
 <!-- Write your answer here -->
+
+The endpoint is an array of objects which have the comments of the pull request stated.
