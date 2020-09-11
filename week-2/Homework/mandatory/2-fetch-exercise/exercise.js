@@ -24,4 +24,7 @@ fetch('https://codeyourfuture.herokuapp.com/api/greetings')
     .then(function(greeting) {
       let greetingText = document.getElementById('greeting-text');
       greetingText.textContent = greeting;
-    });
+    })
+    .catch((error)=>{
+        alert(error);
+    })
