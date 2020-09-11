@@ -24,8 +24,14 @@ The following endpoint is publicly available from Github
 
 1. What would you put in the following fields? `{owner}`, `{repo}`, `{pull_number}`?
 
-<!-- Write your answer here -->
+<!--  {owner} is the user's username of the GitHub account.
+      {repo} is the name of the repo of the user.
+      {pull_number} is the number of the pull request by the user
+
+-->
 
 2. Describe in a sentence what this API endpoint returns when all of the fields are completed?
 
-<!-- Write your answer here -->
+<!-- 
+It returns the specified repo from Github 
+-->
