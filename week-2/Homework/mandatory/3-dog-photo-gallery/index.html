@@ -1,0 +1,44 @@
+<!-- TODO: add CSS to the gallery so that the images don't vary in size too much-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dog photo gallery</title>
+</head>
+<body>
+    <div>
+        <button id="addImageButton">Add New Image</button>
+        <ul id="images">
+
+        </ul>
+    </div>
+
+    <script>
+        let imageEl = document.getElementById("images");
+
+        let addButton = document.getElementById("addImageButton");
+        addButton.addEventListener("click", addImage);
+
+        function addImage() {
+            fetch("https://dog.ceo/api/breeds/image/random")
+                .then(response => response.json())
+                .then(data => {
+                    let newImageEl = document.createElement("li");
+                    let newImage = document.createElement("img");
+                    newImageEl.appendChild(newImage);
+
+                    newImage.src = data.message;
+                    newImage.style.maxHeight = "250px";
+                    imageEl.appendChild(newImage);
+                    })
+                .catch(errorMessage => {
+                    console.log(errorMessage);
+                });
+        }
+        
+
+    </script>
+</body>
+</html>
