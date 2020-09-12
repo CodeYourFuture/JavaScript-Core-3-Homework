@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Document</title>
+    </head>
+    <body>
+        <button>
+            Hit
+            <ul></ul>
+        </button>
+        <script>
+            let button = document.querySelector("button");
+            let ul = document.querySelector("ul");
+            button.addEventListener("click", fetchData);
+
+            function fetchData() {
+                fetch(`https://dog.ceo/api/breeds/image/random`)
+                    .then(function (response) {
+                        return response.json();
+                    })
+                    .then(function (data) {
+                      button.insertAdjacentElement("afterend", ul)
+                        let li = document.createElement("li");
+                        ul.appendChild(li);
+                        let list = document.querySelectorAll("li");
+                        let imageEl = document.createElement("img");
+
+                        let image = data.message;
+                        li.innerHTML = "<image src =" + image + ">";
+                        li.appendChild(imageEl);
+                    })
+                    .catch((err) => console.log(err));
+            }
+        </script>
+    </body>
+</html>

@@ -4,9 +4,9 @@ This project should consolidate knowledge from JS2
 
 This could include
 
-- DOM Manipulation
-- Working with an API
-- Get & Post Requests
+-   DOM Manipulation
+-   Working with an API
+-   Get & Post Requests
 
 ## Project Details
 
