@@ -25,7 +25,7 @@ The following endpoint is publicly available from Github
 1. What would you put in the following fields? `{owner}`, `{repo}`, `{pull_number}`?
 
 <!-- Write your answer here -->
-
+ GET https://api.github.com/repos/{gituser}/{name of repo}/pulls/{any number}/comments
 2. Describe in a sentence what this API endpoint returns when all of the fields are completed?
-
+return all comments on the specified repository
 <!-- Write your answer here -->
