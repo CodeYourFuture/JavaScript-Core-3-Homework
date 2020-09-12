@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            font-size: 10px;
+            display: flex;
+            justify-content: center;
+        }
+        #container{
+            background-color: antiquewhite;
+            width:80%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+        .imgDiv{
+           list-style-type: none;
+           display: inline;
+           margin-left: 0.2rem;
+        }
+        .imgDiv img{
+            width: 10rem;
+            height:10rem;
+        }
+        #btn{
+            width:100%;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <div id="container">
+        <ul id="list">
+        </ul>
+        <div id="btn">
+            <button class="btnAdd">add</button>
+            <button class="btn">click</button>
+        </div>
+       
+    </div>
+    <script>
+        console.log("sa");
+let ul=document.getElementById("list");
+let btnAdd=document.getElementsByClassName("btnAdd");
+
+btnAdd[0].addEventListener("click",function(){
+    fetch(`https://dog.ceo/api/breeds/image/random`).
+    then(function(response){
+        return response.json();
+    }).then(function(data){
+        let li=document.createElement("li");
+        li.classList.add("imgDiv")
+        let img=document.createElement("img");
+        img.src=data.message;
+        li.appendChild(img);
+        ul.appendChild(li);
+    }).catch(function(error){
+        console.log("error:"+error);
+    });
+});
+    </script>
+</body>
+</html>
