@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1>Programmer humor</h1>
+    <figure id="programmerHumor">
+        <img id="xkcdComic" src="" alt="">
+        <figcaption id="xkcdCaption"></figcaption>
+    </figure>
+</body>
+
+<style>
+    body {
+        background-color: #dddddd;
+        text-align: center;
+    }
+
+    #programmerHumor {
+        padding: 1rem;
+    }
+</style>
+
+<script>
+    function fetchComic() {
+        fetch("https://xkcd.now.sh/?comic=latest")
+            .then(response => response.json())
+            .then(data => {
+                console.log(data);
+               
+                let comicEl = document.getElementById("xkcdComic");
+                comicEl.src = data.img;
+                comicEl.alt = data.alt;
+
+                let captionEl = document.getElementById("xkcdCaption");
+                captionEl.innerHTML = `${data.num}: ${data.title}`;
+                })
+            .catch(error => console.log("Error:", error));
+    }
+
+    fetchComic();
+</script>
+
+</html>
