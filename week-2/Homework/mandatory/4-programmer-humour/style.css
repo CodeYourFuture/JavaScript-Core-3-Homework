@@ -1,0 +1,17 @@
+
+body{
+    background-color: #D3D0CB;
+}
+
+#imgContainer{
+    display: flex;
+   justify-content: center;
+background-color: #587B7F;
+height: 100%;
+}
+
+.imgClass{
+margin: auto;
+min-width: 20rem;
+height: auto;
+}
