@@ -24,8 +24,12 @@ The following endpoint is publicly available from Github
 
 1. What would you put in the following fields? `{owner}`, `{repo}`, `{pull_number}`?
 
-<!-- Write your answer here -->
+<!-- Write your answer here -->pull-number :  the pull request number that contains the Lists  of all review comments for that pull request.(wich is for the {repo} repository and owned by {owner}).
+                                       repo:  The name of the repository
+                                       owner: the name of the repo owner(username/ organization name)
 
 2. Describe in a sentence what this API endpoint returns when all of the fields are completed?
 
+List review comments on a pull request
+Lists all review comments for a pull request. By default, review comments are in ascending order by ID.
 <!-- Write your answer here -->
