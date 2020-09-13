@@ -8,6 +8,7 @@ https://marketplace.visualstudio.com/items?itemName=dbaeumer.vscode-eslint
 
 ## 2. Thinking like a Programmer
 
+
 During these past weeks you have gotten a taste of what programming is: the various concepts, what it looks like in code and the way it's used. However, having written some code doesn't make you a programmer. Thinking like a programmer makes you into a programmer. But what does that mean, 'thinking like a programmer'?
 
 Thinking like a programmer is very similar to thinking like a construction worker:
@@ -25,13 +26,17 @@ Take a look at the following resources to learn more about problem solving as ap
 After you've watched these videos I'd like you to answer these questions
 
 ## 1. What do you think the most important quality for a programmer is?
-
+The most important quality for a programmer is PROBLEM SOLVING.
 <!-- Write your answer here -->
 
 ## 2. When trying to solve a challenge, what should you do first?
+Understanding the problem
 
 <!-- Write your answer here -->
 
 ## 3. What should you do if you get stuck?
+1) Go back to your code and debug
+2) Reassess by checking if you can break it down to a general approach
+3) Research using google
 
 <!-- Write your answer here -->
