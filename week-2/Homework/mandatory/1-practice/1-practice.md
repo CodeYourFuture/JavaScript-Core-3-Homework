@@ -24,9 +24,12 @@ The following endpoint is publicly available from Github
 
 1. What would you put in the following fields? `{owner}`, `{repo}`, `{pull_number}`?
 
+https://api.github.com/repos/codeYourFuture/JavaScript-Core-1-Homework/pulls/69/comments
+
 <!-- Write your answer here -->
 
 2. Describe in a sentence what this API endpoint returns when all of the fields are completed?
 
+It returns an array of objects filled with the homework questions and the commits made
 
 <!-- Write your answer here -->
