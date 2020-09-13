@@ -20,8 +20,11 @@ let greeting = document.querySelector("#greeting-text");
 
 fetch("https://codeyourfuture.herokuapp.com/api/greetings")
   .then((response) => response.text())
-  .then((data) => {
-    greeting.textContent = data;
+  .then((greeting) => {
+    greeting.textContent = greeting;
+  })
+  .catch((err) => {
+    console.log(err);
   });
 
 // fetch('*** Write the API address here ***')
