@@ -15,6 +15,10 @@ Take a look at the following code:
 
 Explain why line 4 and line 6 output different numbers.
 
+
+Line 4 will output 2 where as line 6 will output 1 because of the scope of variables. Scope of local variable declared on line 3 is limited and goes till the end of the block (till line 5). And console.log on line 11 will have access to the closest x which is on line 3 so it will output 2.
+
+
 ## Question 2
 
 Take a look at the following code:
@@ -33,6 +37,10 @@ console.log(y)
 ```
 
 What will be the output of this code. Explain your answer in 50 words or less.
+
+
+Firstly the code will output the value 10 because function f1() is called on line 32. Then it will output undefined for the console.log on line 32 because f1() is not returning anything for the output. Then it will throw an error for the console.log() on line 33 because y is not known outside of the f1 function so y is an undefined variable outside the function f1().
+
 
 ## Question 3
 
@@ -61,3 +69,11 @@ console.log(y);
 ```
 
 What will be the output of this code. Explain your answer in 50 words or less.
+
+
+
+Output will be :
+9
+{ x: 10 }
+
+the console.log() on line will print 9 because value of x is not changing inside the function because val is a local variable. and object y will change it's value as it is passed as a parameter and its  value is being inside the function so x:9 inside the object will change to 1.
