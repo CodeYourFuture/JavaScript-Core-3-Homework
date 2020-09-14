@@ -14,6 +14,7 @@ Take a look at the following code:
 ```
 
 Explain why line 4 and line 6 output different numbers.
+// line 4 prints 2 because the console is within the same block of x=2, whereas line 6 prints the global variable x= 1.
 
 ## Question 2
 
@@ -33,6 +34,8 @@ console.log(y)
 ```
 
 What will be the output of this code. Explain your answer in 50 words or less.
+
+// console.log(x) will print the value of the global variable x = 10, console.log(f1()) output is undefined because the function doesn't return a value but the last console outputs reference error because y is a local variable for the function f1 block only.
 
 ## Question 3
 
@@ -61,3 +64,5 @@ console.log(y);
 ```
 
 What will be the output of this code. Explain your answer in 50 words or less.
+
+//the code will work fine. the first console will print 9 because x is a global variable with value 9. the second console prints the object {x:10}
