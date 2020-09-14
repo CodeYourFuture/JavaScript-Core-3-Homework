@@ -9,3 +9,11 @@ let hogwarts = [
     { firstName: "Minerva", lastName: "McGonagall", house: "Gryffindor", pet: null, occupation: "Teacher" },
     { firstName: "Albus", lastName: "Dumbledore", house: "Gryffindor", pet: "Phoenix", occupation: "Teacher" }
 ]
+
+
+function GryffindorPeople([Harry,Hermione, , , , , ,Minerva,Albus]){
+    console.log(Harry.firstName,Harry.lastName,'\n',Hermione.firstName,Hermione.lastName,'\n',Minerva.firstName,Minerva.lastName,'\n',Albus.firstName,Albus.lastName);
+
+}
+
+GryffindorPeople(hogwarts);
