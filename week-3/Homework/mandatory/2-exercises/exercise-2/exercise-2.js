@@ -17,3 +17,14 @@ function GryffindorPeople([Harry,Hermione, , , , , ,Minerva,Albus]){
 }
 
 GryffindorPeople(hogwarts);
+
+function teachersHavePets([...rest]){
+    for(i=0;i<rest.length;i++)
+    {
+    if(rest[i].pet){
+        if(rest[i].occupation === 'Teacher')
+        console.log('\n \n teachers who have pets: ' + rest[i].firstName,rest[i].lastName);
+    }
+}
+}
+teachersHavePets(hogwarts);
