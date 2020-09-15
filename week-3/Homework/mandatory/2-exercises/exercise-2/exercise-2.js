@@ -9,3 +9,17 @@ let hogwarts = [
     { firstName: "Minerva", lastName: "McGonagall", house: "Gryffindor", pet: null, occupation: "Teacher" },
     { firstName: "Albus", lastName: "Dumbledore", house: "Gryffindor", pet: "Phoenix", occupation: "Teacher" }
 ]
+
+// task 1
+hogwarts.forEach(({ firstName, lastName, house }) => {
+    if (house === "Gryffindor") {
+        console.log(firstName, lastName);
+    }
+})
+
+// task 2
+hogwarts.forEach(({ firstName, lastName, pet, occupation }) => {
+    if (occupation === "Teacher" && pet) {
+        console.log(firstName, lastName);
+    }
+})
