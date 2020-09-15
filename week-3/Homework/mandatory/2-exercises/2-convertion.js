@@ -22,6 +22,22 @@
 */
 
 // Write your code here
+// function Person(name) {
+//     const obj = {};
+//     obj.name = name;
+//     obj.greeting = function() {
+//         alert('Hi! I\'m ' + obj.name + '.');
+//     };
+//     return obj;
+// }
+function Person(name) {
+    this.name = name;
+    this.greeting = function() {
+      alert('Hi! I\'m ' + this.name + '.');
+    };
+  }
+
+
 
 // Do not edit this section
 const simon = new Person("simon");
