@@ -7,3 +7,22 @@
      { itemName: "Hash Brown", quantity: 4, unitPrice: 0.40}
  ]
  
+
+const total = order.reduce((total, { quantity, unitPrice }) => {
+    total += quantity * unitPrice;
+    return total;
+}, 0);
+
+const qtyPad = 7;
+const itemPad = 20;
+
+console.log('QTY'.padEnd(qtyPad), 'ITEM'.padEnd(itemPad), "TOTAL");
+
+order.forEach(({ itemName, quantity, unitPrice }) => {
+    console.log(
+        quantity.toString().padEnd(qtyPad),
+        itemName.padEnd(itemPad),
+        (unitPrice * quantity).toFixed(2))
+});
+
+console.log("\nTotal:", total);
