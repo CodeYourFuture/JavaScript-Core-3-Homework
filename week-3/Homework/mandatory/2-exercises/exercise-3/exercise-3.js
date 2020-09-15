@@ -7,3 +7,20 @@
      { itemName: "Hash Brown", quantity: 4, unitPrice: 0.40}
  ]
  
+ function receipt([...rest]){
+     let sum = 0;
+     for(let i=0;i<rest.length;i++){
+         sum += rest[i].unitPrice*rest[i].quantity;
+     }
+
+     console.log('QTY \t\t ITEM \t\t\t\t TOTAL');
+
+     for(i=0;i<rest.length;i++){
+         console.log(rest[i].quantity+'\t\t\t'+rest[i].itemName+'\t\t\t'+(rest[i].unitPrice*rest[i].quantity).toFixed(2));
+       
+  }
+
+     console.log('\nTotal: '+ sum);
+ }
+
+ receipt(order);
