@@ -4,8 +4,10 @@ const personOne = {
     favouriteFood: 'Spinach'
 }
 
-function introduceYourself(___________________________) {
-    console.log (`Hello, my name is ${name}. I am ${age} years old and my favourite food is ${favouriteFood}.`); 
+let{name,age,favouriteFood} = personOne;
+
+function introduceYourself(x) {
+    console.log (`Hello, my name is ${x.name}. I am ${x.age} years old and my favourite food is ${x.favouriteFood}.`); 
 }
 
 introduceYourself(personOne);
