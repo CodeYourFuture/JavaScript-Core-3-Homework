@@ -14,7 +14,7 @@ let hogwarts = [
 // let griF = hogwarts.filter(x => x.house ==="Gryffindor").map(x => x.firstName+x.lastName).toString();
 // console.log(griF);
 function GryffindorPeople([Harry,Hermione, , , , , ,Minerva,Albus]){
-    console.log(Harry.firstName,Harry.lastName,'\n',Hermione.firstName,Hermione.lastName,'\n',Minerva.firstName,Minerva.lastName,'\n',Albus.firstName,Albus.lastName);
+    console.log(Harry.firstName,Harry.lastName,Hermione.firstName,Hermione.lastName,Minerva.firstName,Minerva.lastName,Albus.firstName,Albus.lastName);
 }
 
 GryffindorPeople(hogwarts); 
