@@ -15,6 +15,9 @@ Take a look at the following code:
 
 Explain why line 4 and line 6 output different numbers.
 
+ <!-- the first 'x' declared in line 1 is global and the second 'x' declared in line 3
+ is block scoped and is undefined outside that block. -->
+
 ## Question 2
 
 Take a look at the following code:
@@ -33,6 +36,11 @@ console.log(y)
 ```
 
 What will be the output of this code. Explain your answer in 50 words or less.
+
+<!-- at line 34 the invoked function will log 'x' which is a global variable declared 
+as the number 10 while at line 35 'y' will not be loged as it is undefined ouside 
+the function f1() -->
+
 
 ## Question 3
 
@@ -61,3 +69,8 @@ console.log(y);
 ```
 
 What will be the output of this code. Explain your answer in 50 words or less.
+<!-- 
+at line 57 the code will log 'x' as 9 as it was origionaly declared 
+at line 60 'y' was declared as an object with one element 'x: 9' 
+function f2() at 62 will change the value of y["x"] from 9 to 9+1 
+ and thus at line 68 the code will display 'y' as { x: 10 } -->
