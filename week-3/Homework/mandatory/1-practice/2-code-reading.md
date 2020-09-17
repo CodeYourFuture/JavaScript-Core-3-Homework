@@ -14,6 +14,7 @@ Take a look at the following code:
 ```
 
 Explain why line 4 and line 6 output different numbers.
+Big block and variable will shadow previous value
 
 ## Question 2
 
@@ -33,6 +34,8 @@ console.log(y)
 ```
 
 What will be the output of this code. Explain your answer in 50 words or less.
+//innerscope can acces global scope . we can access x
+// let y inside in the function. and console log outside function we can not access y
 
 ## Question 3
 
@@ -58,6 +61,15 @@ function f2(val) {
 
 f2(y);
 console.log(y);
-```
+
+
+function is not changing the value ===> 9
+objects are reference type inside f2 function we are modifying a property of object ===> {x:10}
+
+
+
+
+
 
 What will be the output of this code. Explain your answer in 50 words or less.
+```
