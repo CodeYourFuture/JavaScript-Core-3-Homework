@@ -17,5 +17,5 @@ The program above will print `Batman is Bruce Wayne`. Notice how we use the `{}`
 
 # Exercise
 
-- What is the syntax to destructure the object `personOne` in exercise-1.js?
+- What is the syntax to destructure the object `personOne` in exercise-1.js? it is {}
 - Update the argument of the function `introduceYourself` to use destructuring on the object that gets passed in.
