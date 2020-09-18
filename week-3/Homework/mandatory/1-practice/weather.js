@@ -8,10 +8,10 @@ if(navigator.geolocation){
     navigator.geolocation.getCurrentPosition(position => {
         long = position.coords.longitude;
         lat = position.coords.latitude;
-        let key = "c04a2e32fa04e29b69c5098d28f21fc8"
-        // const proxy = "http://cors-anywhere.herokuapp.com/";
+        // let key = "ee6c36f7c660287c7cd84f4305b570ba"
+        const proxy = 'https://cors-anywhere.herokuapp.com/';
       
-        const api = `https://openweathermap.org/data/2.5/weather?lat=${lat}&lon=${long}&appid=${key}`;
+        const api =  `${proxy}https://api.darksky.net/forecast/fd9d9c6418c23d94745b836767721ad1/${lat},${long}`;
      
 
     fetch(api)
@@ -20,7 +20,7 @@ if(navigator.geolocation){
     })
     .then(function(data){
         console.log(data);
-        const {temperature, summary} = data.currently;
+        const {temperature, summary, icon} = data.currently;
         // set DOM element from API
         temperatureDegree.textContent = temperature;
         temperatureDescription.textContent = summary;

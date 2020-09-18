@@ -8,6 +8,7 @@ let person = {
     lastName: "Wayne"
 }
 
+
 let { firstName, lastName } = person;
 
 console.log(`Batman is ${firstName}, ${lastName}`);

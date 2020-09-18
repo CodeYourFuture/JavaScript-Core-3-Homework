@@ -1,5 +1,6 @@
 # Exercise 2
 
+
 _Need some help? Refresh your memory with [this article](https://www.freecodecamp.org/news/array-destructuring-in-es6-30e398f21d10/)_
 
 In `exercise-2.js`, you have an array that contains a list of people who are at Hogwarts School of Witchcraft and Wizardry.

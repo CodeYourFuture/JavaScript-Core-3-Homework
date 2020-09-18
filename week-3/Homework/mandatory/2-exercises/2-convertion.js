@@ -22,20 +22,20 @@
 */
 
 // Write your code here
-// function Person(name) {
-//     const obj = {};
-//     obj.name = name;
-//     obj.greeting = function() {
-//         alert('Hi! I\'m ' + obj.name + '.');
-//     };
-//     return obj;
-// }
 function Person(name) {
-    this.name = name;
-    this.greeting = function() {
-      alert('Hi! I\'m ' + this.name + '.');
+    const obj = {};
+    obj.name = name;
+    obj.greeting = function() {
+        console.log('Hi! I\'m ' + obj.name + '.');
     };
-  }
+    return obj;
+}
+// function Person(name) {
+//     this.name = name;
+//     this.greeting = function() {
+//       alert('Hi! I\'m ' + this.name + '.');
+//     };
+//   }
 
 
 

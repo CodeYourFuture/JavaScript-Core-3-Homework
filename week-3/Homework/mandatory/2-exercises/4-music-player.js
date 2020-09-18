@@ -1,5 +1,25 @@
 class MusicPlayer {
     // Add your code here
+    constructor(disc) {
+        this.disc = disc;
+      }
+      add(){
+        console.log(`${this.disc}`)
+      }
+      play() {
+        console.log(`${this.disc}`)
+        
+      }
+      skip() {
+        console.log(`${this.disc}`)
+        
+      }
+      previous() {
+        console.log(`${this.disc}`)
+        
+      }
+
+
 
 }
 
