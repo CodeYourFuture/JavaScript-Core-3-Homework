@@ -20,12 +20,11 @@ Write a program that will print out the receipt for this order.
     orderArray.forEach((item) => {
         let {itemName, quantity, unitPrice} = item;
         itemTotal = unitPrice * quantity;
-        console.log(`${quantity}    ${itemName}             ${itemTotal}`);
+        console.log(`${quantity.toString().padEnd(4)} ${itemName.padEnd(20)} ${itemTotal.toFixed(2)}`);
         total += itemTotal;
 
     })
-    console.log("");
-    console.log(`Total: ${total}`);
+     console.log(`\nTotal: ${total.toFixed(2)}`);
  }
 
  printOrderReceipt(order);
