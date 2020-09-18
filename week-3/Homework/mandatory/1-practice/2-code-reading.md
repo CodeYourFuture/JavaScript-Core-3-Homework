@@ -15,6 +15,8 @@ Take a look at the following code:
 
 Explain why line 4 and line 6 output different numbers.
 
+on line 4, x is read from the variable on line 3 as it is within block scope and will reference the closest variable. whereas on line 6 x is read from the global variable on line one, as the variable on line 3 is not available outside of the block scope 
+
 ## Question 2
 
 Take a look at the following code:
@@ -33,6 +35,10 @@ console.log(y)
 ```
 
 What will be the output of this code. Explain your answer in 50 words or less.
+
+when f1 is called x = 10 (global variable),
+console.log(f1()) will be undefined as there is no return from the function
+console.log(y) will log nothing as Y is only available within the scope of function f1
 
 ## Question 3
 
@@ -61,3 +67,6 @@ console.log(y);
 ```
 
 What will be the output of this code. Explain your answer in 50 words or less.
+x is assigned to a constant and can therefore not be changed, it will still be 9 after running function
+
+whereas with the object what is inside can be changed even tho const is used. so the value of x within the object can increase to x:10 using function f2 
