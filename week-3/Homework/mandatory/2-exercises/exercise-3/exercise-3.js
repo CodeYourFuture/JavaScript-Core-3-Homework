@@ -15,4 +15,4 @@
     totalPrice += unitPrice;
  })
 
- console.log(totalPrice);
+ console.log(`Total: ${totalPrice}`);
