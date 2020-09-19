@@ -7,3 +7,19 @@
      { itemName: "Hash Brown", quantity: 4, unitPrice: 0.40}
  ]
  
+ const receipt = order => {
+     let totalCost = 0;
+     console.log("QTY  ITEM             TOTAL");
+    order.forEach( ( {itemName, quantity, unitPrice} ) => {
+         let total = (quantity * unitPrice ).toFixed(2) ;
+         totalCost += quantity * unitPrice;
+        let padding = "".padStart(17 - itemName.length," ");
+        //console.log( str)
+        //let total = (quantity * unitPrice).toFixed(2).padStart(strlen(itemName), " ");
+        
+        console.log(`${quantity}    ${itemName}${padding}${total}`);
+    })
+    console.log(`Total: ${totalCost.toFixed(2)}`);
+ };
+
+ receipt(order);
