@@ -30,14 +30,14 @@ class ATM {
       }
     // Add your code here
     make_deposit() {
-        console.log(`${this.amount}`)
+        console.log(`${this.amount = 200}`)
         
       }
       check_balance() {
         console.log(`${this.amount}`)
       }
       make_withdraw() {
-        console.log(`${this.amount}`)
+        console.log(`${this.amount = 500}`)
       }
     
 }

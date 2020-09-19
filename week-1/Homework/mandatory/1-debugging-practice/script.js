@@ -38,7 +38,7 @@ function submit() {
     return false;
   } else {
     let book = new Book(title.value, author.value, pages.value, check.checked);
-    library.push(book);
+    myLibrary.push(book);
     render();
   }
 }
@@ -90,11 +90,11 @@ function render() {
 
     //add delete button to every row and render again
     let delButton = document.createElement("button");
-    delBut.id = i + 5;
-    cell5.appendChild(delBut);
+    delButton.id = i + 5;
+    cell5.appendChild(delButton);
     delButton.className = "btn btn-warning";
     delButton.innerHTML = "Delete";
-    delBut.addEventListener("clicks", function () {
+    delButton.addEventListener("click", function () {
       alert(`You've deleted title: ${myLibrary[i].title}`);
       myLibrary.splice(i, 1);
       render();
