@@ -10,15 +10,19 @@ The output of running your code should be:
 */
 
 class ShoppingCart {
-  // Add your code here
-
+  
+  list=[];
+  addItem(value){
+    this.list.push(value);
+  }
   cartContains() {
-    // Use console.log() to output everything contained in your cart
+   
+    console.log(`Your Shoping cart has ${this.list.length} items:${this.list[0]}, ${this.list[1]}, ${this.list[2]}`)
+    
   }
 }
 
 let myCart = new ShoppingCart(); // Creates an empty shopping cart
-
 myCart.addItem("Toilet Roll");
 myCart.addItem("Pasta");
 myCart.addItem("Eggs");

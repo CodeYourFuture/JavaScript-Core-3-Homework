@@ -22,6 +22,15 @@
 */
 
 // Write your code here
+class Person{
+    name;
+    constructor(value){
+        this.name=value;
+    }
+    greeting(){
+        console.log(`hi ${this.name}`)
+    }
+}
 
 // Do not edit this section
 const simon = new Person("simon");

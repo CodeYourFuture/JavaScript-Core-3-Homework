@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+      *{
+        margin:0px;
+        padding: 0px;
+      }
+      body{
+        font-size:16px;
+        display: flex;
+        width:100vw;
+        height:100vh;
+        justify-content: center;
+        align-content: flex-start;
+      }
+      .container{
+        background-color: bisque;
+        width:30%;
+        height:7rem;
+        display:flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+        padding: 0.5rem;
+      }
+      .song{
+        background-color:cornsilk;
+        width:100%;
+        font-weight: bold;
+      }
+      .btn{
+        width:6rem;
+        height:4rem;
+      }
+    </style>
+</head>
+<body>
+  <div class="container">
+    <div class="btnBar">
+      <button id="play" class="btn">play</button>
+      <button id="skip" class="btn">skip</button>
+      <button id="pre" class="btn">previous</button>
+    </div>
+    <div class="song"></div>
+    
+  </div>
+  <script src="1-shopping-cart.js"></script>
+  <script src="2-convertion.js"></script>
+  <script src="3-atm.js"></script>
+  <script src="4-music-player.js"></script>
+</body>
+</html>
