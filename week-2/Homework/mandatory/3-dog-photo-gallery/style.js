@@ -1,7 +1,7 @@
 let newBut = document.getElementById('newBtn');
 let photogalary = document.getElementById('dogPhoto');
 
-newBu.addEventListener('click', function() {
+newBut.addEventListener('click', function() {
     let newPhoto = document.createElement('li');
     let img = document.createElement('img');
     newPhoto.appendChild(img);
