@@ -26,12 +26,13 @@ After you've watched these videos I'd like you to answer these questions
 
 ## 1. What do you think the most important quality for a programmer is?
 
-<!-- Write your answer here -->
+In my opinion, the most important quality for a programmer is good time and task manegement. At the same time the programmer should have quick learning ability.
+
 
 ## 2. When trying to solve a challenge, what should you do first?
 
-<!-- Write your answer here -->
+I should start with braking the task and then try to solve the problem step by step.
 
 ## 3. What should you do if you get stuck?
 
-<!-- Write your answer here -->
+If I got stuck I can go for a walk an calm my self and stop thinking about the problem.
