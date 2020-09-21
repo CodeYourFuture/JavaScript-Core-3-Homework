@@ -1,4 +1,4 @@
-# Project - Part 2
+# Project - Part 2   ===========================================================================> DONE
 
 This project should consolidate knowledge from JS2
 
