@@ -26,7 +26,7 @@ class MusicPlayer {
 		} else {
 			console.log(
 				`Currently playing:${this.song[this.index].title} by ${
-					this.song[this.index].singer
+				     this.song[this.index].singer
 				} .`
 			);
 		}
