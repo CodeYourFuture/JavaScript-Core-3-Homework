@@ -12,8 +12,23 @@
  */
 
 class ATM {
-    // Add your code here
-
+	constructor() {
+		this.balance = 100;
+	}
+	make_deposit(amount) {
+		this.balance += amount;
+	}
+	make_withdrawl(amount) {
+		if (this.balance < amount) {
+			console.log("Sorry. Your balance is blow this amount");
+		} else {
+			this.balance -= amount;
+		}
+	}
+	check_balance() {
+		console.log(this.balance);
+	}
+	// Add your code here
 }
 
 let atm = new ATM(); // Create the ATM
