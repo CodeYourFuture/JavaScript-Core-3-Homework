@@ -69,4 +69,4 @@ console.log(y);
 ```
 
 What will be the output of this code. Explain your answer in 50 words or less.
-Answer 2 : since  x is stored within an object as a key into  a constent variable any operation will on it will alter it's value  Variable y will log {x:10}. 
+Answer 2 : since  x is stored within an object as a key into  a constent variable any operation will on it will alter it's value  Variable y will log {x:10} .
