@@ -21,3 +21,16 @@ let [{ firstName, lastName }] = GryffindorPeople;
 GryffindorPeople.forEach((element) => {
 	console.log(element.firstName + " " + element.lastName);
 });
+
+let teacherWithPet = hogwarts.filter((element) => {
+	if (element.pet !== null && element.occupation === "Teacher") {
+		return true;
+	}
+});
+
+let [{ firstName, lastName }] = teacherWithPet;
+
+teacherWithPet.forEach((element) => {
+	console.log(element.firstName + " " + element.lastName);
+});
+
