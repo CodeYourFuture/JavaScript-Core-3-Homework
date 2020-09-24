@@ -14,6 +14,7 @@ Take a look at the following code:
 ```
 
 Explain why line 4 and line 6 output different numbers.
+They have different scope. line 4 is within the curly braces and gets defined using let so x is only 2 within those curly braces.
 
 ## Question 2
 
@@ -33,6 +34,8 @@ console.log(y)
 ```
 
 What will be the output of this code. Explain your answer in 50 words or less.
+10, undefined
+x gets assigned 10 and is then consoled from within the function which is called on line 32. y is defined as y inside the function so the y which is console logged is not defined within the global scope so is undefined.
 
 ## Question 3
 
@@ -61,3 +64,6 @@ console.log(y);
 ```
 
 What will be the output of this code. Explain your answer in 50 words or less.
+9
+{x:9}
+the f1 function is called with 9 as the argument. Although this function returns 10 that is not consoled. the x defined on line 44 is consoled.Its the same for the object passed into the function f2. What is consoled is the const assigned the object on line 54.
