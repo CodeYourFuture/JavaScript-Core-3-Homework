@@ -7,21 +7,17 @@ let order = [
   { itemName: "Hash Brown", quantity: 4, unitPrice: 0.4 },
 ];
 
-function getSpaces(words, length) {
-  while (("" + words).length < length) {
-    words += " ";
-  }
-  return words;
-}
+console.log("QTY".padEnd(8), "ITEM".padEnd(20), "TOTAL");
 
-console.log(getSpaces("QTY", 8) + getSpaces("ITEM", 20) + "TOTAL");
 let total = 0;
 order.forEach((item) => {
   let { itemName, quantity, unitPrice } = item;
   let sum = quantity * unitPrice;
   total += sum;
   console.log(
-    getSpaces(quantity, 8) + getSpaces(itemName, 20) + sum.toFixed(2)
+    ("" + quantity).padEnd(8),
+    itemName.padEnd(20),
+    sum.toFixed(2)
   );
 });
 console.log("");
