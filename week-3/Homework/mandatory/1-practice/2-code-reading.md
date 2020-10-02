@@ -6,11 +6,12 @@ Take a look at the following code:
 
 ```
 1    let x = 1;
-2    {
-3        let x = 2;
-4        console.log(x);
-5    }
-6    console.log(x);
+2    function f1() 
+3    {
+4        let x = 2;
+5        console.log(x);
+6    }
+7    console.log(x);
 ```
 
 Explain why line 4 and line 6 output different numbers.
