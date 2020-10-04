@@ -16,6 +16,8 @@ Take a look at the following code:
 
 Explain why line 4 and line 6 output different numbers.
 
+// Because of scope, first x in the global scope , after that second x inside local scop. 
+
 ## Question 2
 
 Take a look at the following code:
@@ -34,6 +36,8 @@ console.log(y)
 ```
 
 What will be the output of this code. Explain your answer in 50 words or less.
+
+// it will log 10 for x .But it will give an error that y is not defined .. because the log for y made out of side the scope the y have been defined in .. (let inside the  block scoped)
 
 ## Question 3
 
@@ -61,4 +65,6 @@ f2(y);
 console.log(y);
 ```
 
-What will be the output of this code. Explain your answer in 50 words or less.
+What will be the output of this code. Explain your answer in 50 words or less
+
+//It will log 9  and x =10  and because  x defined with const and const can not be reassigned (constant) the same applied for the const object if we reassigned the object or we attempted to overwrite it, but the keys for that object are not protected so we can reassign them or overwrite them.
