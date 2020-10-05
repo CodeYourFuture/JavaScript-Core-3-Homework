@@ -1,0 +1,18 @@
+body {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+#btn-dog {
+  padding: 1em 2em;
+  cursor: pointer;
+}
+
+img {
+  max-width: 100%;
+}
+
+#imgGallery {
+  list-style: none;
+}
