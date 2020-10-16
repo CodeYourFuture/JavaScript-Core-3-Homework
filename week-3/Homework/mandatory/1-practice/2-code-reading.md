@@ -16,6 +16,13 @@ Take a look at the following code:
 
 Explain why line 4 and line 6 output different numbers.
 
+***********************************************************************************************************************
+# The answer is 
+
+ let is block scoped .. so x between {} will not work outside this scope, it will log 2 because the log is inside the scop and although it can take the value from the global declaration but always the value of the variable will be taken from the nearst so it will take 2 not 1.. but the x = 1 is global and will work for the global scope and will log 1 . 
+***********************************************************************************************************************
+
+
 ## Question 2
 
 Take a look at the following code:
@@ -34,6 +41,12 @@ console.log(y)
 ```
 
 What will be the output of this code. Explain your answer in 50 words or less.
+
+***********************************************************************************************************************
+# The answer is 
+it will log 10 as a value of x .. but it will give an error that y is not defined .. because the log for y made out side the scope the y had been defined in .. (let is block scoped)
+***********************************************************************************************************************
+
 
 ## Question 3
 
@@ -62,3 +75,11 @@ console.log(y);
 ```
 
 What will be the output of this code. Explain your answer in 50 words or less.
+
+
+***********************************************************************************************************************
+
+# The answer is 
+It will log 9  and {x:10} and the reason is x defined with const and const can not be reassined the same applied for the const object if we reassiend the object or we attemted to overwrite it, but the keys for that object are not protected so we can ressign them or overwrite them.
+***********************************************************************************************************************
+
