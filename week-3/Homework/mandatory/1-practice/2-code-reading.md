@@ -16,6 +16,8 @@ Take a look at the following code:
 
 Explain why line 4 and line 6 output different numbers.
 
+- They belong to different scopes. Also `x` on line 3 will 'over shadow' the `x` from global scope as they have the same name.
+
 ## Question 2
 
 Take a look at the following code:
@@ -34,6 +36,9 @@ console.log(y)
 ```
 
 What will be the output of this code. Explain your answer in 50 words or less.
+
+- First console.log will print `10` as it can access the outer scope.
+- Second console.log will throw a reference error as `y` is not accessible from the global scope.
 
 ## Question 3
 
@@ -62,3 +67,6 @@ console.log(y);
 ```
 
 What will be the output of this code. Explain your answer in 50 words or less.
+
+- First console.log will will print `9` as we are not modifying it by just calling `f1` function and this is a constant variable which would throw an error if we would try to do so.
+- Second console.log will print `{ x: 10}` because objects are of reference type. `f2` will modify the property of referenced object.
