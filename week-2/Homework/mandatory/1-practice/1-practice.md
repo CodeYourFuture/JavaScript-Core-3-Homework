@@ -25,7 +25,12 @@ The following endpoint is publicly available from Github
 1. What would you put in the following fields? `{owner}`, `{repo}`, `{pull_number}`?
 
 <!-- Write your answer here -->
+owner - github username (e.g HadiyahL) 
+repo - name of repo (e.g tv-show-dom-project)
+pull_number - number of a specific pull request
+
 
 2. Describe in a sentence what this API endpoint returns when all of the fields are completed?
 
 <!-- Write your answer here -->
+It returns an array of objects, each object containing details of each comment made on the particular pull request.
