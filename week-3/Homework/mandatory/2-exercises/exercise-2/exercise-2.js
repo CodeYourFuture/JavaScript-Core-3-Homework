@@ -9,3 +9,14 @@ let hogwarts = [
     { firstName: "Minerva", lastName: "McGonagall", house: "Gryffindor", pet: null, occupation: "Teacher" },
     { firstName: "Albus", lastName: "Dumbledore", house: "Gryffindor", pet: "Phoenix", occupation: "Teacher" }
 ]
+
+var [Harry,Hermione, Draco, Cedric, Severus, Filius, Pomona, Minerva, Albus ] = hogwarts;
+// var [Gryffindor, Slytherin, Hufflepuff, Ravenclaw] = hogwarts;
+console.log(`${Harry.firstName} ${Harry.lastName}`);
+console.log(`${Hermione.firstName} ${Hermione.lastName}`);
+console.log(`${Minerva.firstName} ${Minerva.lastName}`);
+console.log(`${Albus.firstName} ${Albus.lastName}`);
+
+
+
+
