@@ -15,6 +15,7 @@ Take a look at the following code:
 ```
 
 Explain why line 4 and line 6 output different numbers.
+ - because line 4 statement uses variable from line 3, and line 6 statement uses the variable from line 1
 
 ## Question 2
 
@@ -34,6 +35,9 @@ console.log(y)
 ```
 
 What will be the output of this code. Explain your answer in 50 words or less.
+- first console.log statement will print 10
+- second console statement will call the function which will print 10 again, then "undefined" will be printed because the return value of f1() is undefined
+- third statement will cause an error because y is not in the same scope
 
 ## Question 3
 
@@ -62,3 +66,6 @@ console.log(y);
 ```
 
 What will be the output of this code. Explain your answer in 50 words or less.
+- first console.log will print 9 (f1() does nothing to x because it copies the variable)
+- second console.log statement will print { x: 10 } because the object y is first created and then the variable y is modified with f2() function, since the function modifies original object, not it's copy. 
+  const allows the modification of the object attributes, but it does not allow the var y to be reassigned to another object.
