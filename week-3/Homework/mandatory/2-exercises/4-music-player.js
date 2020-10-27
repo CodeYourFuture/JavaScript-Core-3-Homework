@@ -1,7 +1,52 @@
 class MusicPlayer {
     // Add your code here
+constructor(song, artist) {
+        const musicList = [];
+        this.song = song;
+        this.artist = artist;
+        
+    }
 
+    add({
+        song,
+        artist
+    }) {
+        const {
+            list
+        } = this;
+        const totalList = musicList.push({
+            song
+        }, {
+            artist
+        });
+        console.log(totalList);
+    }
+
+    play() {
+        const {
+            song,
+            artist
+        } = this;
+        console.log(`Currently playing: ${this.song} by ${this.artist}`);
+    }
+
+    skip() {
+        const {
+            song,
+            artist
+        } = this;
+        console.log(`Currently playing: ${this.song} by ${this.artist}`);
+    }
+
+    previous() {
+        const {
+            song,
+            artist
+        } = this;
+        console.log(`Currently playing: ${this.song} by ${this.artist}`);
+    }
 }
+
 
 let myMusicPlayer = new MusicPlayer(); // Create an empty playlist
 
@@ -40,11 +85,3 @@ Optional 2: Can you implement the shuffle functionality for your music player?
 This means the order the songs are played in will be random, but each song will only play once.
 
  */
-
-
-
-
-
-
-
-
