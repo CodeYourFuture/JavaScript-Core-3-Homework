@@ -13,6 +13,7 @@ class ShoppingCart {
   // Add your code here
 
   cartContains() {
+    console.log()
     // Use console.log() to output everything contained in your cart
   }
 }
