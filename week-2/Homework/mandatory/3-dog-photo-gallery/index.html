@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        .btn{
+            width: 100%;
+            border: none;
+            outline: none;
+            padding: 15px 30px;
+            background-color: rgb(17, 185, 129);
+            color: white;
+            cursor: pointer;
+        }
+        .btn:hover{
+            background-color: rgb(10, 110, 77);
+        }
+        .list{
+            list-style-type: none;
+        }
+        .error{
+            color: red;
+        }
+    </style>
+</head>
+<body>
+    <button class="btn">Click me</button>
+    <ul class="list">
+
+    </ul>
+
+    <script>
+        const btn = document.querySelector('.btn');
+        const list = document.querySelector('.list');
+        
+        const item = document.createElement('li');
+        const img = document.createElement('img');
+        item.appendChild(img);
+        list.appendChild(item);
+
+        btn.addEventListener('click', ()=>{
+            fetch('https://dog.ceo/api/breeds/image/random')
+            .then(res => res.json())
+            .then(data => img.setAttribute('src', data.message))
+            .catch(err => console.log(err));
+        })
+    </script>
+</body>
+</html>
