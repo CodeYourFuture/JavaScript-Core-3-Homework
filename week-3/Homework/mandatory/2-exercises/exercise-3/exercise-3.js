@@ -7,3 +7,24 @@
      { itemName: "Hash Brown", quantity: 4, unitPrice: 0.40}
  ]
  
+ /*
+Write a program that will print out the receipt for this order.
+- Log each individual item to the console.
+- Log the total cost of the order to the console.
+ */
+
+ function printOrderReceipt(orderArray) {
+     console.log(`QTY   ITEM                TOTAL`);
+     let total = 0;
+     let itemTotal = 0;
+    orderArray.forEach((item) => {
+        let {itemName, quantity, unitPrice} = item;
+        itemTotal = unitPrice * quantity;
+        console.log(`${quantity.toString().padEnd(4)} ${itemName.padEnd(20)} ${itemTotal.toFixed(2)}`);
+        total += itemTotal;
+
+    })
+     console.log(`\nTotal: ${total.toFixed(2)}`);
+ }
+
+ printOrderReceipt(order);
