@@ -16,6 +16,9 @@ Take a look at the following code:
 
 Explain why line 4 and line 6 output different numbers.
 
+They output different numbers because the scopes of the x variable are different.
+
+
 ## Question 2
 
 Take a look at the following code:
@@ -35,7 +38,9 @@ console.log(y)
 
 What will be the output of this code. Explain your answer in 50 words or less.
 
-## Question 3
+The output of this code will be 10 and undefined. The x variable have a global scope which means can be accessed inside other scopes. The y variable it's defined inside a functions scope and we are trying to display it outside of the function( where it's scope is not recognised).
+
+## Question 3 
 
 Take a look at the following code:
 
@@ -62,3 +67,7 @@ console.log(y);
 ```
 
 What will be the output of this code. Explain your answer in 50 words or less.
+
+The output of the code will be x = 9 and y = 10. 
+X is a integer const and cannot be changed. 
+Y is a const object but we can change the value of the x inside. If we try to reasign the y object then this will throw an error.

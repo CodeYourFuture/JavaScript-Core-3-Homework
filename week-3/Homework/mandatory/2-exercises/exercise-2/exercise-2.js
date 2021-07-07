@@ -9,3 +9,14 @@ let hogwarts = [
     { firstName: "Minerva", lastName: "McGonagall", house: "Gryffindor", pet: null, occupation: "Teacher" },
     { firstName: "Albus", lastName: "Dumbledore", house: "Gryffindor", pet: "Phoenix", occupation: "Teacher" }
 ]
+
+
+
+
+hogwarts.forEach(({firstName, lastName, house}) => {
+    house === 'Gryffindor' ? console.log(`${firstName} ${lastName}`) : '';
+})
+
+hogwarts.forEach(({firstName, lastName, pet, occupation}) => {
+    pet && occupation === 'Teacher' ? console.log(`${firstName} ${lastName}`) : '';
+})
